@@ -1,0 +1,14 @@
+{
+  "version": "0.2.1",
+  "defaults": {},
+  "configurations": [
+    {
+      "name": "SFMLMoviePlayer",
+      "type": "default",
+      "project": "CMakeLists.txt",
+      "projectTarget": "SFMLMoviePlayer.exe",
+      "currentDir": ".",
+      "args": [ "example/example.mp4" ]
+    }
+  ]
+}

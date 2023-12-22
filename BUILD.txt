@@ -1,0 +1,32 @@
+* Windows
+
+To compile in Windows, you can use CMake or open the folder with Visual Studio 2022.
+
+The easiest way to get the required dependencies is to use vcpkg.
+
+vcpkg install physfs sfml ffmpeg:x86-windows
+vcpkg install physfs sfml ffmpeg:x86-windows-static
+vcpkg install physfs sfml ffmpeg:x64-windows
+vcpkg install physfs sfml ffmpeg:x64-windows-static
+
+SFML - https://www.sfml-dev.org/
+       SFML 2.x
+
+FFmpeg - https://ffmpeg.zeranoe.com/builds/
+         Get both shared and dev packages (version 4.x, 5.x or 6.x)
+
+* Linux
+
+sudo apt install libsfml-dev
+sudo apt install libavdevice-dev libavformat-dev libavfilter-dev libavcodec-dev libswscale-dev libavutil-dev
+
+* CMake
+
+A CMake project file is provided.
+
+cmake CMakeLists.txt
+
+All the CMake properties and default values:
+
+SFEMOVIE_BUILD_EXAMPLE (TRUE) Build Example
+SFEMOVIE_DYNAMIC_FFMPEG (TRUE) Use dynamic FFmpeg
